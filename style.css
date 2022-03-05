@@ -95,7 +95,7 @@ html {
   position: relative;
 }
 
-.days div:hover:not(.today) {
+.days div:hover {
   background-color: #262626;
   border: 0.2rem solid #777;
 }
@@ -106,7 +106,7 @@ html {
 }
 
 .today {
-  background-color: #b68d08;
+  font-weight: bold;
 }
 
 .days .showPopup{
@@ -139,6 +139,10 @@ html {
 
 .days .hide{
   display: none;
+}
+
+.BookedByMe{
+  background-color: #9e711d;
 }
 
 /* Add animation (fade in the popup) */
