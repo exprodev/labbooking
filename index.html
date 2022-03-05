@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nadra Registration</title>
+</head>
+<body>
+    <h2>Citizens Information </h2>
+    <form action="backend.php">
+        <div>
+            <label for="name">Name </label> <input type="text" name="vName" id="name">
+        </div>
+        <br> <!-- Bad Practice -->
+        <div>
+            <label for="age">Age </label> <input type="number" name="vAge" id="age"> (in Years)
+        </div>
+        <br>
+        <div>
+            <label for="DOB">Date of Birth </label> <input type="date" name="vDOB" id="DOB">
+        </div>
+        <br>
+        <div>
+            <label for="email">E-mail </label> <input type="email" name="vEmail" id="email">
+        </div>
+        <br>
+        <div>
+            <input type="checkbox" name="vTnC" id="TnC"> <label for="TnC">I have read all the terms and conditions </label>
+        </div>
+        <div>
+            <input type="checkbox" name="vPromo" id="promo" checked> <label for="promo">I consent to recieve Promotion E-mails of New products </label>
+        </div>
+        <br>
+        <div>
+            Gender : 
+            <input type="radio" name="vGender" id="male"> <label for="male">Male </label>
+            <input type="radio" name="vGender" id="female"> <label for="female">Female </label>
+            <input type="radio" name="vGender" id="other"> <label for="other">Other </label>
+        </div>
+        <br>
+        <div>
+            <label for="SelfInfo">Tell us about yourself: </label>
+            <br>
+            <textarea name="vSelfInfo" id="SelfInfo" cols="30" rows="6">I belong to......</textarea>
+        </div>
+        <br>
+        <div>
+            <label for="religon">Religon</label>
+            <select name="vReligon" id="religon">
+                <option value="isl" selected>Islam</option>
+                <option value="hin">Hinduism</option>
+                <option value="cri">Cristianity</option>
+                <option value="oth">Other</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Proceed">
+            <input type="reset" value="Clear">
+        </div>
+    </form>
+</body>
+</html>
