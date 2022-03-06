@@ -125,7 +125,6 @@ function InfoHide(ID) {
 
 function BookingCheck(theDate)
 {
-  console.log(theDate);
   let StartDate = new Date(2022,1,28);
   let EndDate = new Date(2022,2,8);
   if(theDate >= StartDate && theDate <= EndDate)
