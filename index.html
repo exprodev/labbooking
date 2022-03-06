@@ -16,10 +16,76 @@
   </head>
   <body>
     <div class="container">
+      <div class="bookingform">
+        <form action="backend.php" method="post">
+          <header>Booking Form</header>
+          <div class="bookingInput">
+            <table id="divElement">
+                <tr>
+                    <td>
+                        <label class="field" for="TeamID">Team ID: </label>
+                    </td>
+                    <td>
+                        <select name="vTeamID" id="TeamID" class="textArea">
+                          <!-- <option disabled selected value> -- Select an option -- </option> -->
+                          <option hidden selected>* Choose a team ID</option>
+                          <option value="T01">Team 01</option>
+                          <option value="T02">Team 02</option>
+                          <option value="T03">Team 03</option>
+                          <option value="T04">Team 04</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                  <td>
+                      <label class="field" for="TeamPassword">Password: </label>
+                  </td>
+                  <td>
+                      <input class="textArea" type="password" name="vTeamPassword" id="TeamPassword">
+                  </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="field" for="MemberName">Team Member Name: </label>
+                    </td>
+                    <td>
+                        <input class="textArea"type="text" name="vMemberName" id="MemberName">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="field" for="StartDate">Start Date: </label>
+                    </td>
+                    <td>
+                        <input class="textArea"type="date" name="vStartDate" id="StartDate">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="field" for="EndDate">End Date: </label>
+                    </td>
+                    <td>
+                        <input class="textArea"type="date" name="vEndDate" id="EndDate">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    </td>
+                    <td>
+                        <div class="buttonArea">
+                            <input class="button" type="submit" value="Proceed">
+                        </div>    
+                    </td>
+                </tr>
+            </table>
+          </div>  
+        </form>
+      </div>
       <div class="calendar">
         <div class="month">
           <i class="fas fa-angle-left prev"></i>
           <div class="date">
+            <h2>Reservation History</h2>
             <h1></h1>
             <p></p>
           </div>
@@ -37,7 +103,6 @@
         <div class="days"></div>
       </div>
     </div>
-
     <script src="script.js"></script>
   </body>
 </html>

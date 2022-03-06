@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Quicksand", sans-serif;
+  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
 }
 
 html {
@@ -19,10 +20,107 @@ html {
   align-items: center;
 }
 
+.bookingform{
+  width: 45rem;
+  height: 52rem;
+  background-color: #5a975a;
+  box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.4);
+}
+
+.bookingform form header {
+  width: 100%;
+  height: 12rem;
+  background-color: #062c06;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 9rem;
+  text-align: center;
+  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+  font-size: 3rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin-bottom: 1rem;
+}
+
+.bookingInput {
+  margin-top: 10%;
+  margin-right: 10%;
+}
+
+.field{
+  white-space: nowrap;
+  outline: none;
+  transition: all 0.3s ease;
+  margin-left: 10%;
+}
+
+
+
+.textArea{
+  margin-left: 10%;
+  border-color: #b3b3b3;
+  resize: none;
+  margin-bottom: 15px;
+  border: 1px solid lightgrey;
+  border-radius: 6px;
+  outline: none;
+  font-size: 17px;
+  font-family: 'Poppins', sans-serif;
+  transition: all 0.3s ease;
+  width: 200px;
+  height: 90%;
+  padding-left: 10px;
+  text-shadow: none;
+}
+
+.textArea:focus{
+  border-color: #b3b3b3;
+}
+
+.buttonArea{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  text-shadow: none;
+}
+
+.button{
+  color: #fff;
+  display: block;
+  outline: none;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  flex-wrap: nowrap;
+  background: #9e711d;
+  border: 2px solid #9e711d;
+  transition: all 0.3s ease;
+  width: 100px;
+  height: 50px;
+  text-shadow: none;
+  margin-left: 15%;
+}
+
+.button:hover{
+  color: #9e711d;
+  background: none;
+}
+
+td{
+  width: 200px;
+  height: 47px;
+  position: relative;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
 .calendar {
   width: 45rem;
   height: 52rem;
-  background-color: #549659;
+  background-color: #ae7462;
   box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.4);
 }
 
@@ -51,8 +149,13 @@ html {
   margin-bottom: 1rem;
 }
 
+.month h2{
+  font-size: 2rem;
+  font-weight: 400;
+}
+
 .month p {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 }
 
 .weekdays {
